@@ -1,0 +1,30 @@
+/* logo title page */
+.gdbar img {
+  width: 312px !important;
+  height: 137px !important;
+  margin: 8px 8px;
+}
+
+/* logo title page */
+.gdbar {
+  width: 400px !important;
+  height: 170px !important;
+}
+
+/* creative commons logo title on footer of every slide */
+slides > slide:not(.nobackground):before {
+  background: url("https://i.creativecommons.org/l/by/4.0/88x31.png") no-repeat 0 50%;
+  width: 88px;
+  height: 31px;
+  background-size: 88px 31px;
+}
+
+/* background on slide */
+slides > slide:not(.nobackground) {
+  background: url("../images/integratedlabsolutions.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* define forced column break */ 
+.forceBreak { -webkit-column-break-after: always; break-after: column; }
