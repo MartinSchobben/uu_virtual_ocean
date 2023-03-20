@@ -125,4 +125,6 @@ One of the biggest problems in research is the inadvertent destruction of data a
 
 All these solutions would benefit from integral workshops and courses that teach the importance of good data management
 
-## References
+## Thanks {data-background="white" data-background-size=cover}
+
+<iframe src="graphical_cv.html"></iframe>
