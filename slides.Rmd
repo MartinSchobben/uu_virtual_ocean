@@ -112,7 +112,7 @@ One of the biggest problems in research is the inadvertent destruction of data a
 **Solutions:**
 
 - Pure R client for iRODS (official launch June this year)
-- Opinionated and interactive tools for data annotation, standards, and versioning
+- Opinionated and interactive tools for data annotation and versioning
 - Workflows and processing pipelines with integrated data management
 
 
