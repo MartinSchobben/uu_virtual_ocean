@@ -1,14 +1,13 @@
 ---
-title: "FAIReLABS"
-subtitle: "Presentation Template"
+title: "Virtual Ocean Learning"
 author: | 
-  |Alice Devries
-  |Old Town, Old Country
+  |Martin Schobben
+  |Vienna University of Technology
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
   ioslides_presentation:
     css: styles/fairelabs.css
-    logo: images/fairelabs.png
+    logo: images/uu-logo-en.svg
     widescreen: TRUE
     incremental: FALSE
 bibliography: "packages.bib"
@@ -22,44 +21,108 @@ pkgs <- c("knitr", "rmarkdown")
 knitr::write_bib(pkgs, "packages.bib", prefix = "")
 ```
 
-## R Markdown
+## Introduction {data-background="white" data-background-size=cover}
 
-This is an R Markdown  presentation [@rmarkdown]. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+<iframe src="graphical_cv.html"></iframe>
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+# Digital Literacy
 
-## Slide with Bullets
+## Digital Literacy
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+**Why:**
 
-## Slide with R Output
+ - Data analysis under-appreciated in (under)graduate curriculum
+ - Stimulate inductive learning
 
-```{r cars, echo = TRUE}
-summary(cars)
-```
+**What I have done so far:**
 
-## Slide with Plot
+ - Organizer UU code club
+ - Off/online course in data analysis with R
 
-```{r pressure}
-plot(pressure)
-```
+**What I like to do in the future:**
 
-## Centered
+- Map the shortcomings in digital literacy among students
+- Collect best practices on how to improve digital literacy in courses
+- An analysis of the effectiveness of digital tools in class
 
-<div class="centered">
-This text is centered.
+<div class="notes">
+  Data analysis can be stimulated by giving the right tools to the students: open source data analysis platforms.
 </div>
 
-## Two columns
+# Educational tools
 
-<div class="columns-2">
-  ![](images/fairelabs.png){width=60%K}
+## Oceanexplorer
 
-  - Bullet 1
-  - Bullet 2
-  - Bullet 3
+Sampling the ocean with the NOAA Oceanexplorer
+
+<!-- <iframe src="https://utrecht-university.shinyapps.io/oceanexplorer/"></iframe> -->
+
+## Oceanexplorer and Digital Literacy
+
+- Non-programmer: graphical user interface
+- Beginning programmer: hybrid graphical-programming interface (low code platform)
+- Advanced programmer: R package
+
+# Data Management
+
+## What is iRODS
+
+- **Distributed**
+  + Runs on a laptop, a cluster, on premises or geographically distributed
+
+- **Open Source** 
+  + BSD-3 Licensed, install it today and try before you buy
+  
+- **Data Centric & Metadata Driven**
+  + Insulate both your user and your data from your infrastructure
+  
+## Taking Command of Lab-data
+
+Opening-up the black box of lab-data (Cameca, Zeiss, Thermo Fisher)    
+
+- Prevent tracking data from source to publication
+- Fragmented storage 
+- Monitoring and troubleshooting is reduced to current analysis
+
+<center>
+![](https://github.com/FAIReLABS/webpage/blob/master/datamanagement_infra.png?raw=true){width=60%}
+</center>
+
+## Step One: Getting the Lab-data
+
+Parsing unstructured text data.
+
+<center>
+![](https://github.com/FAIReLABS/panacea/blob/main/panacea-demo.webp?raw=true){width=100%}
+</center>
+
+<div class="notes">
+  I think this important for the advertised project as oceanographic (sensor) data will be central to the project. So data management will be central to successful project execution. 
 </div>
+
+## Making Data Management Easy
+
+<center>
+![](images/fairelabs.png){width=30%}
+</center>
+
+
+One of the biggest problems in research is the inadvertent destruction of data and the inaccessibility of data due to poor labeling and description of data. 
+
+**Solutions:**
+
+- Pure R client for iRODS (official launch June this year)
+- Opinionated and interactive tools for dealing with data management including data annotation, standards, and versioning.
+- Workflows and processing pipelines with integrated data management functionality
+
+
+<div class="notes">
+  Data management for Researchers: Kristin Briney
+  Separating the data (iRODS server) from the analysis (local or HPC).
+</div>
+
+## Data literacy
+
+All these solutions would benefit from integral workshops and courses that teach the importance of good data management
 
 ## References
