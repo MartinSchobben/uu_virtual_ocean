@@ -41,8 +41,9 @@ jobs:
 
       - name: Build presentation
         run: |
+          mkdir -p build
           RMD_PATH=($(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '[.]Rmd$'))
-          Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f, output_file = "index.html")' ${RMD_PATH[*]}
+          Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f, output_file = "index.html", output_dir = "build")' ${RMD_PATH[*]}
 
       - name: Deploy to GitHub pages 🚀
         if: github.event_name != 'pull_request'
@@ -50,3 +51,4 @@ jobs:
         with:
           clean: false
           branch: gh-pages
+          folder: build

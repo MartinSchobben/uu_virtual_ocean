@@ -123,7 +123,7 @@ One of the biggest problems in research is the inadvertent destruction of data a
 
 ## Data literacy
 
-All these solutions would benefit from integral workshops and courses that teach the importance of good data management
+All these solutions would benefit from integral workshops and courses that teach the importance of good data management.
 
 ## Thanks {data-background="white" data-background-size=cover}
 
