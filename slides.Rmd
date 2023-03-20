@@ -10,7 +10,7 @@ output:
     logo: images/uu-logo-en.svg
     widescreen: TRUE
     incremental: FALSE
-bibliography: "packages.bib"
+bibliography: ["packages.bib", "lit.bib"]
 ---
 
 ```{r setup, include=FALSE}
@@ -107,12 +107,12 @@ Parsing unstructured text data.
 </center>
 <br>
 
-One of the biggest problems in research is the inadvertent destruction of data and the inaccessibility of data due to poor labeling and description of data. 
+One of the biggest problems in research is the inadvertent destruction of data and the inaccessibility of data due to poor labeling and description of data [@Briney2015]. 
 
 **Solutions:**
 
 - Pure R client for iRODS (official launch June this year)
-- Opinionated and interactive tools for dealing with data management including data annotation, standards, and versioning.
+- Opinionated and interactive tools for data annotation, standards, and versioning
 - Workflows and processing pipelines with integrated data management
 
 
@@ -128,3 +128,5 @@ All these solutions would benefit from integral workshops and courses that teach
 ## Thanks {data-background="white" data-background-size=cover}
 
 <iframe src="graphical_cv.html"></iframe>
+
+## References

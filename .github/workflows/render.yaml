@@ -9,12 +9,17 @@ name: render-presentation
 jobs:
   render-presentation:
     runs-on: ubuntu-latest
+    # Only restrict concurrency for non-PR jobs
+    concurrency:
+      group: pkgdown-${{ github.event_name != 'pull_request' || github.run_id }}
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       RENV_PATHS_ROOT: ~/.local/share/renv
 
     steps:
       - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
 
       - uses: r-lib/actions/setup-pandoc@v2
 
