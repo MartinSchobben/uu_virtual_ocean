@@ -23,7 +23,7 @@ knitr::write_bib(pkgs, "packages.bib", prefix = "")
 
 ## Introduction {data-background="white" data-background-size=cover}
 
-<iframe src="https://martinschobben.github.io/webpage/graphical_cv.html"></iframe>
+<iframe src="graphical_cv.html"></iframe>
 
 # Digital Literacy
 
@@ -127,6 +127,6 @@ All these solutions would benefit from integral workshops and courses that teach
 
 ## Thanks {data-background="white" data-background-size=cover}
 
-<iframe src="https://martinschobben.github.io/webpage/graphical_cv.html"></iframe>
+<iframe src="graphical_cv.html"></iframe>
 
 ## References
