@@ -55,7 +55,7 @@ knitr::write_bib(pkgs, "packages.bib", prefix = "")
 
 Sampling the ocean with the NOAA Oceanexplorer
 
-<!-- <iframe src="https://utrecht-university.shinyapps.io/oceanexplorer/"></iframe> -->
+<iframe src="https://utrecht-university.shinyapps.io/oceanexplorer/"></iframe>
 
 ## Oceanexplorer and Digital Literacy
 
