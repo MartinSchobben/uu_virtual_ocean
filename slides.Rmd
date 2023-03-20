@@ -105,7 +105,7 @@ Parsing unstructured text data.
 <center>
 ![](images/fairelabs.png){width=30%}
 </center>
-
+<br>
 
 One of the biggest problems in research is the inadvertent destruction of data and the inaccessibility of data due to poor labeling and description of data. 
 
@@ -113,7 +113,7 @@ One of the biggest problems in research is the inadvertent destruction of data a
 
 - Pure R client for iRODS (official launch June this year)
 - Opinionated and interactive tools for dealing with data management including data annotation, standards, and versioning.
-- Workflows and processing pipelines with integrated data management functionality
+- Workflows and processing pipelines with integrated data management
 
 
 <div class="notes">
