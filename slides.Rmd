@@ -37,7 +37,7 @@ knitr::write_bib(pkgs, "packages.bib", prefix = "")
 **What I have done so far:**
 
  - Organizer UU code club
- - Off/online course in data analysis with R
+ - Off/online courses in data analysis with R
 
 **What I like to do in the future:**
 
